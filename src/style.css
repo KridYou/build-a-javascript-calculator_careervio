@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: 'Gemunu Libre', sans-serif;
+  background-color: gray;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator{
+  background: pink;
+  box-shadow: 3px 2.5px 4.9px rgba(1,2,3,5);
+  display: flex;
+  flex-wrap: wrap;
+  paddint: 6px;
+  height: 382px;
+  width: 252px;
+}
+
+.display{
+  color: orange;
+  background: #41E2FA;
+  font-size: 29px;
+  position: relative;
+  padding: 20px 10px;
+  text-align: right;
+/*   margin-top: 11px; */
+  height: 70px;
+  width: 100%;
+}
+
+/* .display small{
+  color: purple;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 13px;
+} */
+
+.nums-container{
+  width: 75%;
+}
+
+.ops-container{
+  width: 25%;
+}
+
+button{
+  border: none;
+  border-radius: 50%;
+  cursor: alias;
+  font-size: 20px;
+  margin: 5px;
+  height: 50px;
+  width: 50px;
+}
+
+button:hover{
+  opacity: 0.5;
+}
+
+button:active{
+  transform: scale(1.1);
+}
+
+button:focus{
+  background: blue;
+  outline: none;
+}
+
+button.big-v{
+  border-radius: 48px;
+  height: 110px;
+}
+
+button.big-h{
+  border-radius: 48px;
+  width: 110px;
+}
+
+button.blue{
+  background-color: #1811E1;
+  color: black;
+  
+}
+
+button.dark-green{
+  background-color: #FA114F;
+  color: black;
+}
+
+button.light-red{
+  background-color: #FF6262;
+  color: black; 
+}
+
+button.ac{
+  margin-right: 40%;
+}
+
